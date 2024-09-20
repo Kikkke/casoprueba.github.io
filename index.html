@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="validar.js"></script>
+    <link rel="stylesheet" href="estilo.css" type="text/css" media="screen">
+        
+</head>
+<body>
+<div class="principal">
+    
+    <form method="get" name="registro" onsubmit="return validar(this)" action="index.html">
+        <label>Nombre</label>
+        <input class="cajas" type="text" name="nombre" id="nombre"/>
+        <br>
+            <label>Edad</label>
+            <input class="cajas" type="number" name="edad" id="edad"/>
+        <br>
+        <br>
+        <legend>Selecciona sexo :D</legend>
+        <blockquote>
+            <label>Femenino</label>
+            <input class="cajas" type="radio" name="sexo" value="femenino"/>
+            <label>Masculino</label>
+            <input class="cajas" type="radio" name="sexo" value="masculino"/>
+            <label>Binario</label>
+            <input class="cajas" type="radio" name="sexo" value="binario"/>
+
+        </blockquote>
+        <label>Deporte favorito
+        <select id="deporte" name="deporte" >
+            <option value="futbol">Futbol</option>
+            <option value="basketbol">Basquetbol</option>
+            <option value="beisbol">Beisbol</option>
+            <option value="tennis">Tennis</option>
+            <option value="ninguno">Ninguno</option>
+
+
+        </select>
+    </label>
+    <br>
+    <br>
+
+    <input class="boton" type="submit" id="enviar" value="Enviar">
+    <input class="boton" type="submit" id="reset" value="Reset">
+    </form>
+
+
+</div>
+</body>
+</html>
